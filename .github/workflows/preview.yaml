@@ -39,4 +39,4 @@ jobs:
             - --details=${{ matrix.details }}
 
       - name: Inspect outputs
-        run: echo "${{ toJson(steps.main.outputs) }}"
+        run: echo '${{ toJson(steps.main.outputs) }}'
