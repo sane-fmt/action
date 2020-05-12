@@ -1,0 +1,21 @@
+name: sane-fmt
+description: Install and run sane-fmt
+inputs:
+  args:
+    description: List of CLI arguments to pass to sane-fmt
+    required: false
+    default: '[--details=diff, --color=always]'
+  action-logs:
+    description: Whether to pass '--log-format=github-actions' to integrate with GitHub Actions
+    required: false
+    default: 'true'
+outputs:
+  total:
+    description: Number of scanned files
+  changed:
+    description: Number of scanned files that aren't formatted
+  unchanged:
+    description: Number of scanned files that are formatted
+runs:
+  using: node12
+  main: dist/index.js
