@@ -6,13 +6,13 @@ import { group, setFailed, getInput, addPath, setOutput } from '@actions/core'
 import { safeLoad } from 'js-yaml'
 import fetch from 'node-fetch'
 import tempPath from 'unique-temp-path'
+import { upstreamVersion } from './upstream-version.json'
 
 const location = tempPath('sane-fmt.')
 const executableBaseName = platform === 'win32' ? 'sane-fmt.exe' : 'sane-fmt'
 const executablePath = path.join(location, executableBaseName)
 const upstreamUrlPrefix =
   'https://github.com/KSXGitHub/sane-fmt/releases/download'
-const upstreamVersion = '0.2.20'
 const upstreamBaseNames: Partial<Record<NodeJS.Platform, string>> = {
   darwin: 'sane-fmt-x86_64-apple-darwin',
   linux: 'sane-fmt-x86_64-unknown-linux-gnu',
