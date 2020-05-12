@@ -16,7 +16,7 @@ jobs:
           - always
           - never
         details:
-          - none
+          - count
           - name
           - diff
         action-logs:
