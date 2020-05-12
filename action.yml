@@ -1,15 +1,29 @@
 name: sane-fmt
 description: Install and run sane-fmt
 inputs:
+  run:
+    description: Whether sane-fmt should be executed right away
+    required: false
+    default: 'true'
   args:
     description: List of CLI arguments to pass to sane-fmt
     required: false
     default: '[--details=diff, --color=always]'
   action-logs:
-    description: Whether to pass '--log-format=github-actions' to integrate with GitHub Actions
+    description: Whether to pass `--log-format=github-actions` to integrate with GitHub Actions
     required: false
     default: 'true'
+  export-path:
+    description: Wether to add sane-fmt to PATH
+    required: false
+    default: 'false'
 outputs:
+  location:
+    description: Directory where sane-fmt is stored
+  executable-basename:
+    description: Base name of sane-fmt (either `sane-fmt` or `sane-fmt.exe`)
+  executable-path:
+    description: Full path to sane-fmt
   total:
     description: Number of scanned files
   changed:
