@@ -1,5 +1,8 @@
 name: sane-fmt
 description: Install and run sane-fmt
+branding:
+  icon: check
+  color: blue
 inputs:
   run:
     description: Whether sane-fmt should be executed right away
