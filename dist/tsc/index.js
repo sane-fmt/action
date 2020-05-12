@@ -11,11 +11,11 @@ const core_1 = require("@actions/core");
 const js_yaml_1 = require("js-yaml");
 const node_fetch_1 = __importDefault(require("node-fetch"));
 const unique_temp_path_1 = __importDefault(require("unique-temp-path"));
+const upstream_version_json_1 = require("./upstream-version.json");
 const location = unique_temp_path_1.default('sane-fmt.');
 const executableBaseName = process_1.platform === 'win32' ? 'sane-fmt.exe' : 'sane-fmt';
 const executablePath = path_1.default.join(location, executableBaseName);
 const upstreamUrlPrefix = 'https://github.com/KSXGitHub/sane-fmt/releases/download';
-const upstreamVersion = '0.2.20';
 const upstreamBaseNames = {
     darwin: 'sane-fmt-x86_64-apple-darwin',
     linux: 'sane-fmt-x86_64-unknown-linux-gnu',
@@ -23,7 +23,7 @@ const upstreamBaseNames = {
 };
 const upstreamUrl = [
     upstreamUrlPrefix,
-    upstreamVersion,
+    upstream_version_json_1.upstreamVersion,
     upstreamBaseNames[process_1.platform],
 ].join('/');
 function parseBoolean(value, inputName) {
