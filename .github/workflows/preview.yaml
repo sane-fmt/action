@@ -1,0 +1,42 @@
+on:
+  - push
+
+jobs:
+  preview:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - windows-latest
+        color:
+          - always
+          - never
+        details:
+          - count
+          - name
+          - diff
+        action-logs:
+          - 'true'
+          - 'false'
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run the action
+        id: main
+        continue-on-error: true
+        uses: ./
+        with:
+          action-logs: ${{ matrix.action-logs }}
+          args: |
+            - src
+            - dist/tsc
+            - --color=${{ matrix.color }}
+            - --details=${{ matrix.details }}
+
+      - name: Inspect outputs
+        run: echo '${{ toJson(steps.main.outputs) }}'
