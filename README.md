@@ -94,6 +94,10 @@ jobs:
 | changed             | Number of scanned files that aren't formatted               | number |
 | unchanged           | Number of scanned files that are formatted                  | number |
 
+## Become a Patron
+
+[My Patreon Page](https://patreon.com/khai96_).
+
 ## License
 
 [MIT](https://git.io/Jf8hr) © [Hoàng Văn Khải](https://github.com/KSXGitHub/)
