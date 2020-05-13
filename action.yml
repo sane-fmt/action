@@ -1,5 +1,5 @@
 name: sane-fmt
-description: Install and run sane-fmt
+description: Use sane-fmt to check for TypeScript/JavaScript code formatting
 branding:
   icon: check
   color: blue
