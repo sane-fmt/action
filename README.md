@@ -64,10 +64,15 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
-    - uses: KSXGitHub/github-actions-sane-fmt@master
+
+    - name: Install sane-fmt
+      uses: KSXGitHub/github-actions-sane-fmt@master
       with:
         run: 'false'
         export-path: 'true'
+
+    - name: Run sane-fmt
+      run: sane-fmt --details=diff --log-format=github-actions ./
 ```
 
 ## Inputs and Outputs
