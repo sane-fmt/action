@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "parcel build src/index.ts --target node --bundle-node-modules --no-minify -o dist/index.js",
+    "build": "parcel build src/index.ts --target node --bundle-node-modules -o dist/index.js",
     "start": "pnpm run build && sh ./run.sh"
   },
   "dependencies": {
