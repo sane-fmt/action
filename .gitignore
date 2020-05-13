@@ -2,6 +2,7 @@ node_modules
 *.log
 /dist/*
 !/dist/index.js
+/.cache
 tmp
 temp
 *.tmp
