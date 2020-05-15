@@ -42,6 +42,7 @@ async function main() {
   const args = safeLoad(getInput('args'))
   const actionLogs = getBooleanInput('action-logs')
   const exportPath = getBooleanInput('export-path')
+  const shouldRun = getBooleanInput('run')
 
   if (!Array.isArray(args)) {
     setFailed(
@@ -71,6 +72,11 @@ async function main() {
     console.log(`Making ${executablePath} executable`)
     fs.chmodSync(executablePath, 0o755)
   })
+
+  if (!shouldRun) {
+    console.log('run is false, skipping run')
+    return
+  }
 
   if (actionLogs) args.push('--log-format=github-actions')
   const { error, status } = spawnSync(executablePath, args, {
