@@ -1,0 +1,7 @@
+const assert = require('assert')
+const fs = require('fs')
+const tmpPath = require.resolve('../dist/index.js.tmp')
+const mainPath = require.resolve('../dist/index.js')
+const tmpContent = fs.readFileSync(tmpPath, { encoding: 'utf8' })
+const mainContent = fs.readFileSync(mainPath, { encoding: 'utf8' })
+assert.strictEqual(mainContent, tmpContent, 'dist/index.js is out of sync')
