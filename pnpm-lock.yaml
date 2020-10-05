@@ -1,20 +1,20 @@
 dependencies:
-  '@actions/core': 1.2.4
-  '@types/js-yaml': 3.12.4
-  '@types/node': 13.13.9
+  '@actions/core': 1.2.6
+  '@types/js-yaml': 3.12.5
+  '@types/node': 14.11.2
   '@types/node-fetch': 2.5.7
   js-yaml: 3.14.0
-  node-fetch: 2.6.0
+  node-fetch: 2.6.1
   unique-temp-path: 0.1.3
 devDependencies:
   parcel: 1.12.4
-  typescript: 3.9.3
+  typescript: 4.0.3
 lockfileVersion: 5.1
 packages:
-  /@actions/core/1.2.4:
+  /@actions/core/1.2.6:
     dev: false
     resolution:
-      integrity: sha512-YJCEq8BE3CdN8+7HPZ/4DxJjk/OkZV2FFIf+DlZTC/4iBlzYCD5yjRR6eiOS5llO11zbRltIRuKAjMKaWTE6cg==
+      integrity: sha512-ZQYitnqiyBc3D+k7LsgSBmMDVkOVidaagDG7j3fOym77jNunWRuYx7VSHa9GNfFZh+zh61xsCjRj4JxMZlDqTA==
   /@babel/code-frame/7.10.1:
     dependencies:
       '@babel/highlight': 7.10.1
@@ -1021,10 +1021,10 @@ packages:
       node: '>= 6.0.0'
     resolution:
       integrity: sha512-USSjRAAQYsZFlv43FUPdD+jEGML5/8oLF0rUzPQTtK4q9kvaXr49F5ZplyLz5lox78cLZ0TxN2bIDQ1xhOkulQ==
-  /@types/js-yaml/3.12.4:
+  /@types/js-yaml/3.12.5:
     dev: false
     resolution:
-      integrity: sha512-fYMgzN+9e28R81weVN49inn/u798ruU91En1ZnGvSZzCRc5jXx9B2EDhlRaWmcO1RIxFHL8AajRXzxDuJu93+A==
+      integrity: sha512-JCcp6J0GV66Y4ZMDAQCXot4xprYB+Zfd3meK9+INSJeVZwJmHAW30BBEEkPzXswMXuiyReUGOP3GxrADc9wPww==
   /@types/node-fetch/2.5.7:
     dependencies:
       '@types/node': 13.13.9
@@ -1036,6 +1036,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
+  /@types/node/14.11.2:
+    dev: false
+    resolution:
+      integrity: sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
   /@types/q/1.5.4:
     dev: true
     resolution:
@@ -3466,12 +3470,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2+DuKodWvwRTrCfKOeR24KIc5unKjOh8mz17NCzVnHWfjAdDqbfbjqh7gUT+BkXBRQM52+xCHciKWonJ3CbJMQ==
-  /node-fetch/2.6.0:
+  /node-fetch/2.6.1:
     dev: false
     engines:
       node: 4.x || >=6.0.0
     resolution:
-      integrity: sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+      integrity: sha512-V4aYg89jEoVRxRb2fJdAg8FHvI7cEyYdVAh94HH0UIK8oJxUfkjlDQN9RbMx+bEjP7+ggMiFRprSti032Oipxw==
   /node-forge/0.7.6:
     dev: true
     resolution:
@@ -5209,13 +5213,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/3.9.3:
+  /typescript/4.0.3:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-D/wqnB2xzNFIcoBG9FG8cXRDjiqSTbG2wd8DMZeQyJlP1vfTkIxH4GKveWaEBYySKIg+USu+E+EDIR47SqnaMQ==
+      integrity: sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
   /uncss/0.17.3:
     dependencies:
       commander: 2.20.3
@@ -5522,12 +5526,12 @@ packages:
     resolution:
       integrity: sha512-ZbotRWhF+lkjijC/VhmOT9wSgyBQ7+zr13+YLkhfsSiTriYsMzkTUFP18pFhWwBeMa5gUc1MzbhrO6/VB7c9Xg==
 specifiers:
-  '@actions/core': ^1.2.4
-  '@types/js-yaml': ^3.12.3
-  '@types/node': ^13.13.5
+  '@actions/core': ^1.2.6
+  '@types/js-yaml': ^3.12.5
+  '@types/node': ^14.11.2
   '@types/node-fetch': ^2.5.7
-  js-yaml: ^3.13.1
-  node-fetch: ^2.6.0
+  js-yaml: ^3.14.0
+  node-fetch: ^2.6.1
   parcel: ^1.12.4
-  typescript: ^3.8.3
+  typescript: ^4.0.3
   unique-temp-path: ^0.1.3
