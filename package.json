@@ -3,8 +3,7 @@
   "scripts": {
     "build:tmp": "parcel build src/index.ts --target node --bundle-node-modules -o dist/index.js.tmp",
     "build": "pnpm run build:tmp && cp dist/index.js.tmp dist/index.js",
-    "test": "pnpm run build:tmp && node test/sync.js",
-    "start": "pnpm run build && sh ./run.sh"
+    "test": "pnpm run build:tmp && node test/sync.js"
   },
   "dependencies": {
     "node-fetch": "^2.6.1",
