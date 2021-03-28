@@ -14,7 +14,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
-    - uses: KSXGitHub/github-actions-sane-fmt@master
+    - uses: sane-fmt/action@master
 ```
 
 ### Disable Action Logs
@@ -27,7 +27,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
-    - uses: KSXGitHub/github-actions-sane-fmt@master
+    - uses: sane-fmt/action@master
       with:
         actions-logs: 'false'
 ```
@@ -44,7 +44,7 @@ jobs:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
-    - uses: KSXGitHub/github-actions-sane-fmt@master
+    - uses: sane-fmt/action@master
       with:
         args: |
           - --details=diff
@@ -66,7 +66,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Install sane-fmt
-      uses: KSXGitHub/github-actions-sane-fmt@master
+      uses: sane-fmt/action@master
       with:
         run: 'false'
         export-path: 'true'
