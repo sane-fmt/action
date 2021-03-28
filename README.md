@@ -105,4 +105,4 @@ jobs:
 
 ## License
 
-[MIT](https://git.io/Jf8hr) © [Hoàng Văn Khải](https://github.com/KSXGitHub/)
+[MIT](https://git.io/Jf8hr) © [Hoàng Văn Khải](https://ksxgithub.github.io/)
