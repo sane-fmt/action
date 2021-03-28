@@ -12,7 +12,7 @@ const location = tempPath('sane-fmt.')
 const executableBaseName = platform === 'win32' ? 'sane-fmt.exe' : 'sane-fmt'
 const executablePath = path.join(location, executableBaseName)
 const upstreamUrlPrefix =
-  'https://github.com/KSXGitHub/sane-fmt/releases/download'
+  'https://github.com/sane-fmt/sane-fmt/releases/download'
 const upstreamBaseNames: Partial<Record<NodeJS.Platform, string>> = {
   darwin: 'sane-fmt-x86_64-apple-darwin',
   linux: 'sane-fmt-x86_64-unknown-linux-gnu',
