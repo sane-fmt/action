@@ -1,6 +1,6 @@
 # sane-fmt Action
 
-Use [sane-fmt](https://github.com/KSXGitHub/sane-fmt) to check for TypeScript/JavaScript code formatting.
+Use [sane-fmt](https://github.com/sane-fmt/sane-fmt) to check for TypeScript/JavaScript code formatting.
 
 ## Usage Examples
 
