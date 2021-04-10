@@ -1,7 +1,7 @@
 import { group, setFailed, getInput, addPath, setOutput } from '@actions/core'
 import { spawnSync } from 'child_process'
 import fs from 'fs'
-import { safeLoad } from 'js-yaml'
+import { load } from 'js-yaml'
 import fetch from 'node-fetch'
 import path from 'path'
 import { platform, exit } from 'process'
@@ -38,7 +38,7 @@ function parseBoolean(value: string, inputName: string): boolean {
 const getBooleanInput = (name: string) => parseBoolean(getInput(name), name)
 
 async function main() {
-  const args = safeLoad(getInput('args'))
+  const args = load(getInput('args'))
   const actionLogs = getBooleanInput('action-logs')
   const exportPath = getBooleanInput('export-path')
   const shouldRun = getBooleanInput('run')
