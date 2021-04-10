@@ -1,14 +1,14 @@
 dependencies:
   '@actions/core': 1.2.6
-  '@types/js-yaml': 3.12.5
-  '@types/node': 14.11.2
-  '@types/node-fetch': 2.5.7
-  js-yaml: 3.14.0
+  '@types/js-yaml': 4.0.0
+  '@types/node': 14.14.37
+  '@types/node-fetch': 2.5.10
+  js-yaml: 4.0.0
   node-fetch: 2.6.1
   unique-temp-path: 0.1.3
 devDependencies:
   parcel: 1.12.4
-  typescript: 4.0.3
+  typescript: 4.2.4
 lockfileVersion: 5.2
 packages:
   /@actions/core/1.2.6:
@@ -38,7 +38,7 @@ packages:
       '@babel/parser': 7.10.1
       '@babel/template': 7.10.1
       '@babel/traverse': 7.10.1
-      '@babel/types': 7.10.1
+      '@babel/types': 7.10.2
       convert-source-map: 1.7.0
       debug: 4.1.1
       gensync: 1.0.0-beta.1
@@ -54,7 +54,7 @@ packages:
       integrity: sha512-u8XiZ6sMXW/gPmoP5ijonSUln4unazG291X0XAQ5h0s8qnAFr6BRRZGUEK+jtRWdmB0NTJQt7Uga25q8GetIIg==
   /@babel/generator/7.10.1:
     dependencies:
-      '@babel/types': 7.10.1
+      '@babel/types': 7.10.2
       jsesc: 2.5.2
       lodash: 4.17.15
       source-map: 0.5.7
@@ -924,7 +924,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.10.1
       '@babel/parser': 7.10.1
-      '@babel/types': 7.10.1
+      '@babel/types': 7.10.2
     dev: true
     resolution:
       integrity: sha512-OQDg6SqvFSsc9A0ej6SKINWrpJiNonRIniYondK2ViKhB06i3c0s+76XUft71iqBEe9S1OKsHwPAjfHnuvnCig==
@@ -935,21 +935,13 @@ packages:
       '@babel/helper-function-name': 7.10.1
       '@babel/helper-split-export-declaration': 7.10.1
       '@babel/parser': 7.10.1
-      '@babel/types': 7.10.1
+      '@babel/types': 7.10.2
       debug: 4.1.1
       globals: 11.12.0
       lodash: 4.17.15
     dev: true
     resolution:
       integrity: sha512-C/cTuXeKt85K+p08jN6vMDz8vSV0vZcI0wmQ36o6mjbuo++kPMdpOYw23W2XH04dbRt9/nMEfA4W3eR21CD+TQ==
-  /@babel/types/7.10.1:
-    dependencies:
-      '@babel/helper-validator-identifier': 7.10.1
-      lodash: 4.17.15
-      to-fast-properties: 2.0.0
-    dev: true
-    resolution:
-      integrity: sha512-L2yqUOpf3tzlW9GVuipgLEcZxnO+96SzR6fjXMuxxNkIgFJ5+07mHCZ+HkHqaeZu8+3LKnNJJ1bKbjBETQAsrA==
   /@babel/types/7.10.2:
     dependencies:
       '@babel/helper-validator-identifier': 7.10.1
@@ -1021,25 +1013,25 @@ packages:
       node: '>= 6.0.0'
     resolution:
       integrity: sha512-USSjRAAQYsZFlv43FUPdD+jEGML5/8oLF0rUzPQTtK4q9kvaXr49F5ZplyLz5lox78cLZ0TxN2bIDQ1xhOkulQ==
-  /@types/js-yaml/3.12.5:
+  /@types/js-yaml/4.0.0:
     dev: false
     resolution:
-      integrity: sha512-JCcp6J0GV66Y4ZMDAQCXot4xprYB+Zfd3meK9+INSJeVZwJmHAW30BBEEkPzXswMXuiyReUGOP3GxrADc9wPww==
-  /@types/node-fetch/2.5.7:
+      integrity: sha512-4vlpCM5KPCL5CfGmTbpjwVKbISRYhduEJvvUWsH5EB7QInhEj94XPZ3ts/9FPiLZFqYO0xoW4ZL8z2AabTGgJA==
+  /@types/node-fetch/2.5.10:
     dependencies:
-      '@types/node': 13.13.9
+      '@types/node': 14.14.37
       form-data: 3.0.0
     dev: false
     resolution:
-      integrity: sha512-o2WVNf5UhWRkxlf6eq+jMZDu7kjgpgJfl4xVNlvryc95O/6F2ld8ztKX+qu+Rjyet93WAWm5LjeX9H5FGkODvw==
+      integrity: sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==
   /@types/node/13.13.9:
     dev: false
     resolution:
       integrity: sha512-EPZBIGed5gNnfWCiwEIwTE2Jdg4813odnG8iNPMQGrqVxrI+wL68SPtPeCX+ZxGBaA6pKAVc6jaKgP/Q0QzfdQ==
-  /@types/node/14.11.2:
+  /@types/node/14.14.37:
     dev: false
     resolution:
-      integrity: sha512-jiE3QIxJ8JLNcb1Ps6rDbysDhN4xa8DJJvuC9prr6w+1tIh+QAbYyNF3tyiZNLDBIuBCf4KEcV2UvQm/V60xfA==
+      integrity: sha512-XYmBiy+ohOR4Lh5jE379fV2IU+6Jn4g5qASinhitfyO71b/sCo6MKsMLF5tc7Zf2CE8hViVQyYSobJNke8OvUw==
   /@types/q/1.5.4:
     dev: true
     resolution:
@@ -1137,8 +1129,13 @@ packages:
   /argparse/1.0.10:
     dependencies:
       sprintf-js: 1.0.3
+    dev: true
     resolution:
       integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  /argparse/2.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
   /arr-diff/4.0.0:
     dev: true
     engines:
@@ -1987,6 +1984,7 @@ packages:
   /debug/4.1.1:
     dependencies:
       ms: 2.1.2
+    deprecated: Debug versions >=3.2.0 <3.2.7 || >=4 <4.3.1 have a low-severity ReDos regression when used in a Node.js environment. It is recommended you upgrade to 3.2.7 or 4.3.1. (https://github.com/visionmedia/debug/issues/797)
     dev: true
     resolution:
       integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
@@ -2272,6 +2270,7 @@ packages:
     resolution:
       integrity: sha1-/cpRzuYTOJXjyI1TXOSdv/YqRjM=
   /esprima/4.0.1:
+    dev: true
     engines:
       node: '>=4'
     hasBin: true
@@ -2590,6 +2589,7 @@ packages:
     dependencies:
       ajv: 6.12.2
       har-schema: 2.0.0
+    deprecated: this library is no longer supported
     dev: true
     engines:
       node: '>=6'
@@ -3093,9 +3093,17 @@ packages:
     dependencies:
       argparse: 1.0.10
       esprima: 4.0.1
+    dev: true
     hasBin: true
     resolution:
       integrity: sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
+  /js-yaml/4.0.0:
+    dependencies:
+      argparse: 2.0.1
+    dev: false
+    hasBin: true
+    resolution:
+      integrity: sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q==
   /jsbn/0.1.1:
     dev: true
     resolution:
@@ -3754,7 +3762,7 @@ packages:
       '@babel/runtime': 7.10.1
       '@babel/template': 7.10.1
       '@babel/traverse': 7.10.1
-      '@babel/types': 7.10.1
+      '@babel/types': 7.10.2
       '@iarna/toml': 2.2.5
       '@parcel/fs': 1.11.0
       '@parcel/logger': 1.11.1
@@ -4532,6 +4540,7 @@ packages:
       request-promise-core: 1.1.3_request@2.88.2
       stealthy-require: 1.1.1
       tough-cookie: 2.5.0
+    deprecated: request-promise-native has been deprecated because it extends the now deprecated request package, see https://github.com/request/request/issues/3142
     dev: true
     engines:
       node: '>=0.12.0'
@@ -4842,6 +4851,7 @@ packages:
     resolution:
       integrity: sha512-NzNVhJDYpwceVVii8/Hu6DKfD2G+NrQHlS/V/qgv763EYudVwEcMQNxd2lh+0VrUByXN/oJkl5grOhYWvQUYiw==
   /sprintf-js/1.0.3:
+    dev: true
     resolution:
       integrity: sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
   /sshpk/1.16.1:
@@ -5213,13 +5223,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-  /typescript/4.0.3:
+  /typescript/4.2.4:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+      integrity: sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
   /uncss/0.17.3:
     dependencies:
       commander: 2.20.3
@@ -5527,11 +5537,11 @@ packages:
       integrity: sha512-ZbotRWhF+lkjijC/VhmOT9wSgyBQ7+zr13+YLkhfsSiTriYsMzkTUFP18pFhWwBeMa5gUc1MzbhrO6/VB7c9Xg==
 specifiers:
   '@actions/core': ^1.2.6
-  '@types/js-yaml': ^3.12.5
-  '@types/node': ^14.11.2
-  '@types/node-fetch': ^2.5.7
-  js-yaml: ^3.14.0
+  '@types/js-yaml': ^4.0.0
+  '@types/node': ^14.14.37
+  '@types/node-fetch': ^2.5.10
+  js-yaml: ^4.0.0
   node-fetch: ^2.6.1
-  parcel: ^1.12.4
-  typescript: ^4.0.3
+  parcel: ^1.12.3
+  typescript: ^4.2.4
   unique-temp-path: ^0.1.3
