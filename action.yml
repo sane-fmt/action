@@ -34,5 +34,5 @@ outputs:
   unchanged:
     description: Number of scanned files that are formatted
 runs:
-  using: node12
+  using: node16
   main: dist/index.js
