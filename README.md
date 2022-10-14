@@ -13,7 +13,7 @@ on: push
 jobs:
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: sane-fmt/action@master
 ```
 
@@ -26,7 +26,7 @@ on: push
 jobs:
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: sane-fmt/action@master
       with:
         actions-logs: 'false'
@@ -43,7 +43,7 @@ on: push
 jobs:
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - uses: sane-fmt/action@master
       with:
         args: |
@@ -63,7 +63,7 @@ on: push
 jobs:
   runs-on: ubuntu-latest
   steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Install sane-fmt
       uses: sane-fmt/action@master
