@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-node@v3.5.1
         with:
           node-version: '16'
-      - uses: pnpm/action-setup@v2.2.3
+      - uses: pnpm/action-setup@v2.2.4
         with:
           version: '7.13.4'
           run_install: 'true'
